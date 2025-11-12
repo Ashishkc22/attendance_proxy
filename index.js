@@ -13,7 +13,7 @@ app.get('/ping', (req, res) => {
 app.use(
   '/',
   createProxyMiddleware({
-    target: 'http://jsonplaceholder.typicode.com',
+    target: 'http://attendance-sys-1841398519.ap-south-1.elb.amazonaws.com/25b490b4-d740-4f90-b9b2-b8c3e27dc6e4/auth/',
     changeOrigin: true,
     pathRewrite: { '^/': '' },
     onProxyReq: (proxyReq, req, res) => {
